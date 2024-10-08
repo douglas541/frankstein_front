@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-dark-teal-9);
+    margin: 0;
+    padding: 0;
+    color: var(--color-white);
+}
+
+.pricing-page {
+    text-align: center;
+    padding: 2rem;
+}
+
+.pricing-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.toggle-switch {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.toggle-button {
+    background-color: var(--color-dark-teal-6);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: var(--color-white);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button.active {
+    background-color: var(--color-dark-teal-4);
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--color-dark-teal-1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 20rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: var(--color-dark-teal-5);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    color: var(--color-white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-dark-teal-6);
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.features li {
+    margin-bottom: 0.5rem;
+}
+
+.standard {
+    background-color: var(--color-dark-teal-3);
+    position: relative;
+}
+
+.standard::before {
+    content: "⭐";
+    font-size: 1.5rem;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--color-dark-teal-4);
+    color: var(--color-white);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
